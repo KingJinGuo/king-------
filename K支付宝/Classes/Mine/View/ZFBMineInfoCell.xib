@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZFBMineInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="455" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user01_icon" translatesAutoresizingMaskIntoConstraints="NO" id="I9v-Sq-y36">
+                        <rect key="frame" x="20" y="10" width="88" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="I9v-Sq-y36" secondAttribute="height" id="cOh-Py-BQx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="老司机" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioP-v1-bfy">
+                        <rect key="frame" x="128" y="13" width="52" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="itcast@cn.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJd-ra-grs">
+                        <rect key="frame" x="128" y="46.5" width="89.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waU-EW-nXi">
+                        <rect key="frame" x="128" y="77" width="92.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title=" 相册" image="album">
+                            <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sra-QV-V4b">
+                        <rect key="frame" x="312.5" y="77" width="122.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title=" 会员中心" image="vip1">
+                            <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5Z-po-ije">
+                        <rect key="frame" x="220.5" y="77" width="92" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title=" 收藏" image="favorite">
+                            <color key="titleColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sra-QV-V4b" secondAttribute="trailing" constant="20" id="0nE-Td-wKQ"/>
+                <constraint firstItem="sra-QV-V4b" firstAttribute="leading" secondItem="s5Z-po-ije" secondAttribute="trailing" id="CS8-9P-T0e"/>
+                <constraint firstItem="s5Z-po-ije" firstAttribute="leading" secondItem="waU-EW-nXi" secondAttribute="trailing" id="DHq-4y-xmX"/>
+                <constraint firstItem="ioP-v1-bfy" firstAttribute="leading" secondItem="I9v-Sq-y36" secondAttribute="trailing" constant="20" id="Gdo-YU-aPz"/>
+                <constraint firstItem="I9v-Sq-y36" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="KFr-IF-fHW"/>
+                <constraint firstItem="s5Z-po-ije" firstAttribute="centerY" secondItem="waU-EW-nXi" secondAttribute="centerY" id="SH0-iA-pOd"/>
+                <constraint firstItem="wJd-ra-grs" firstAttribute="leading" secondItem="ioP-v1-bfy" secondAttribute="leading" id="Yym-wk-hP9"/>
+                <constraint firstItem="s5Z-po-ije" firstAttribute="width" secondItem="waU-EW-nXi" secondAttribute="width" id="aLg-OC-QAT"/>
+                <constraint firstItem="sra-QV-V4b" firstAttribute="centerY" secondItem="waU-EW-nXi" secondAttribute="centerY" id="bcP-H5-Lxq"/>
+                <constraint firstItem="s5Z-po-ije" firstAttribute="height" secondItem="waU-EW-nXi" secondAttribute="height" id="izj-ab-BTO"/>
+                <constraint firstItem="waU-EW-nXi" firstAttribute="bottom" secondItem="I9v-Sq-y36" secondAttribute="bottom" id="kqr-Ol-o9j"/>
+                <constraint firstItem="sra-QV-V4b" firstAttribute="height" secondItem="waU-EW-nXi" secondAttribute="height" id="mKj-oz-oMM"/>
+                <constraint firstItem="sra-QV-V4b" firstAttribute="width" secondItem="waU-EW-nXi" secondAttribute="width" constant="30" id="oNz-Cc-uCS"/>
+                <constraint firstItem="wJd-ra-grs" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="p2v-N6-FAV"/>
+                <constraint firstItem="ioP-v1-bfy" firstAttribute="top" secondItem="I9v-Sq-y36" secondAttribute="top" constant="3" id="pV7-lX-mHd"/>
+                <constraint firstItem="waU-EW-nXi" firstAttribute="leading" secondItem="wJd-ra-grs" secondAttribute="leading" id="snV-K8-6Js"/>
+                <constraint firstItem="I9v-Sq-y36" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="uwe-zb-q9W"/>
+                <constraint firstAttribute="bottom" secondItem="I9v-Sq-y36" secondAttribute="bottom" constant="10" id="wh1-B2-Cr7"/>
+            </constraints>
+            <size key="customSize" width="455" height="108"/>
+            <point key="canvasLocation" x="-196.5" y="38"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="album" width="21" height="21"/>
+        <image name="favorite" width="21" height="21"/>
+        <image name="user01_icon" width="200" height="200"/>
+        <image name="vip1" width="21" height="21"/>
+    </resources>
+</document>

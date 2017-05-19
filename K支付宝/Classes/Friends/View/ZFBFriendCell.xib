@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="59" id="KGk-i7-Jjw" customClass="ZFBFriendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="58.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="APC_message_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0sA-BF-wkL">
+                        <rect key="frame" x="8" y="7" width="44" height="44.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="13S-2A-60p"/>
+                            <constraint firstAttribute="height" constant="44" id="1Ij-Wf-x1T"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="消息中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsV-GG-h18">
+                        <rect key="frame" x="60" y="7" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCC-AG-okt">
+                        <rect key="frame" x="60" y="33.5" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刚刚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hd1-lN-ghW">
+                        <rect key="frame" x="285" y="16" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hd1-lN-ghW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="Jss-l1-cIS"/>
+                    <constraint firstItem="0sA-BF-wkL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="PQj-iD-7YA"/>
+                    <constraint firstItem="lsV-GG-h18" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-12" id="Rkv-b2-BWe"/>
+                    <constraint firstAttribute="trailing" secondItem="hd1-lN-ghW" secondAttribute="trailing" constant="8" id="Xna-QJ-2wV"/>
+                    <constraint firstItem="lsV-GG-h18" firstAttribute="leading" secondItem="0sA-BF-wkL" secondAttribute="trailing" constant="8" id="dvp-8t-3gr"/>
+                    <constraint firstItem="YCC-AG-okt" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="12" id="hRi-6c-6VZ"/>
+                    <constraint firstItem="YCC-AG-okt" firstAttribute="leading" secondItem="lsV-GG-h18" secondAttribute="leading" id="nae-jH-cZU"/>
+                    <constraint firstItem="0sA-BF-wkL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="z8u-6M-DPj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="0sA-BF-wkL" id="YP1-O4-FHf"/>
+                <outlet property="subTitleLable" destination="YCC-AG-okt" id="hEF-Hf-2Jb"/>
+                <outlet property="timeLable" destination="hd1-lN-ghW" id="Mgn-K5-geO"/>
+                <outlet property="titleLable" destination="lsV-GG-h18" id="x3p-Wl-fbQ"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="61.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="APC_message_icon" width="45" height="45"/>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>icon</key>
+		<string>user01_icon</string>
+		<key>name</key>
+		<string>超哥</string>
+		<key>contentText</key>
+		<string>超哥带你飞~~~~~~</string>
+		<key>picture</key>
+		<string>pic4</string>
+		<key>time</key>
+		<string>刚刚</string>
+		<key>mine</key>
+		<true/>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>user02_icon</string>
+		<key>name</key>
+		<string>小泽玛利亚</string>
+		<key>contentText</key>
+		<string>呵呵 痒~~~~~</string>
+		<key>time</key>
+		<string>昨天</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>user02_icon</string>
+		<key>name</key>
+		<string>波多野结衣</string>
+		<key>contentText</key>
+		<string>带你飞~~~~~~</string>
+		<key>picture</key>
+		<string>pic6</string>
+		<key>time</key>
+		<string>昨天</string>
+	</dict>
+	<dict>
+		<key>icon</key>
+		<string>user01_icon</string>
+		<key>name</key>
+		<string>加藤</string>
+		<key>contentText</key>
+		<string>飞飞飞飞飞飞飞飞飞飞</string>
+		<key>picture</key>
+		<string>pic1</string>
+		<key>time</key>
+		<string>前天</string>
+	</dict>
+</array>
+</plist>

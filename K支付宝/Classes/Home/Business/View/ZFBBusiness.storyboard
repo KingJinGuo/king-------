@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rL9-Ki-bmJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Business Controller-->
+        <scene sceneID="KmQ-Bi-8Ue">
+            <objects>
+                <tableViewController id="rL9-Ki-bmJ" customClass="ZFBBusinessController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="135" sectionHeaderHeight="28" sectionFooterHeight="28" id="pVN-lO-nYL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="business" rowHeight="135" id="KXD-V8-pSX" userLabel="business" customClass="ZFBBusinessCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KXD-V8-pSX" id="lmV-5F-XBs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kfc" translatesAutoresizingMaskIntoConstraints="NO" id="siO-1L-yg3">
+                                            <rect key="frame" x="15" y="15" width="90" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="90" id="5oY-6k-g0f"/>
+                                                <constraint firstAttribute="height" constant="70" id="cER-cc-rhw"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KFC 三里屯店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gr-ZY-sqi">
+                                            <rect key="frame" x="125" y="17" width="106" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdF-nT-l8F" customClass="ZFBLeverStar">
+                                            <rect key="frame" x="125" y="48" width="60" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="12" id="3tz-YE-dEr"/>
+                                                <constraint firstAttribute="width" constant="60" id="zZM-Kw-mUn"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLy-Z1-sdC">
+                                            <rect key="frame" x="193" y="46.5" width="19.5" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人均消费 0元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fal-31-cI5">
+                                            <rect key="frame" x="222.5" y="46" width="84" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离修正大厦 200m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYS-wz-XHd">
+                                            <rect key="frame" x="125" y="75" width="136" height="13"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="13" id="3o5-dj-ng5"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="减" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgD-R6-5rZ">
+                                            <rect key="frame" x="125" y="100" width="17" height="17"/>
+                                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="Ydt-4X-gJX"/>
+                                                <constraint firstAttribute="width" constant="17" id="hY5-Fx-GCz"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不要钱免费吃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgH-B0-X68">
+                                            <rect key="frame" x="155" y="98" width="104" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0折" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAh-PD-LBi">
+                                            <rect key="frame" x="338" y="46.5" width="23" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="DAh-PD-LBi" firstAttribute="centerY" secondItem="fal-31-cI5" secondAttribute="centerY" id="51N-Da-CQt"/>
+                                        <constraint firstItem="YgD-R6-5rZ" firstAttribute="leading" secondItem="vYS-wz-XHd" secondAttribute="leading" id="5CT-c3-pwD"/>
+                                        <constraint firstItem="fal-31-cI5" firstAttribute="leading" secondItem="yLy-Z1-sdC" secondAttribute="trailing" constant="10" id="7iQ-t1-7c7"/>
+                                        <constraint firstItem="yLy-Z1-sdC" firstAttribute="centerY" secondItem="EdF-nT-l8F" secondAttribute="centerY" id="8mb-pf-vmI"/>
+                                        <constraint firstItem="fal-31-cI5" firstAttribute="centerY" secondItem="yLy-Z1-sdC" secondAttribute="centerY" id="A9t-VJ-WbO"/>
+                                        <constraint firstItem="vYS-wz-XHd" firstAttribute="top" secondItem="fal-31-cI5" secondAttribute="bottom" constant="12" id="Bql-0J-UMF"/>
+                                        <constraint firstItem="bgH-B0-X68" firstAttribute="centerY" secondItem="YgD-R6-5rZ" secondAttribute="centerY" id="EY9-tV-uYh"/>
+                                        <constraint firstItem="yLy-Z1-sdC" firstAttribute="leading" secondItem="EdF-nT-l8F" secondAttribute="trailing" constant="8" id="Foy-Bh-NHD"/>
+                                        <constraint firstItem="YgD-R6-5rZ" firstAttribute="top" secondItem="vYS-wz-XHd" secondAttribute="bottom" constant="12" id="I2s-1y-gzl"/>
+                                        <constraint firstItem="vYS-wz-XHd" firstAttribute="leading" secondItem="EdF-nT-l8F" secondAttribute="leading" id="X5N-rB-fmP"/>
+                                        <constraint firstItem="siO-1L-yg3" firstAttribute="leading" secondItem="lmV-5F-XBs" secondAttribute="leading" constant="15" id="ZUD-Ek-Lkj"/>
+                                        <constraint firstItem="bgH-B0-X68" firstAttribute="top" secondItem="vYS-wz-XHd" secondAttribute="bottom" constant="10" id="deS-zk-9EB"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="DAh-PD-LBi" secondAttribute="trailing" constant="6" id="fIL-WV-Fse"/>
+                                        <constraint firstItem="4gr-ZY-sqi" firstAttribute="top" secondItem="lmV-5F-XBs" secondAttribute="top" constant="17" id="fgt-yw-7A0"/>
+                                        <constraint firstItem="EdF-nT-l8F" firstAttribute="leading" secondItem="siO-1L-yg3" secondAttribute="trailing" constant="20" id="hhM-6R-vF4"/>
+                                        <constraint firstItem="4gr-ZY-sqi" firstAttribute="leading" secondItem="siO-1L-yg3" secondAttribute="trailing" constant="20" id="mea-Rr-4RV"/>
+                                        <constraint firstItem="siO-1L-yg3" firstAttribute="top" secondItem="lmV-5F-XBs" secondAttribute="top" constant="15" id="p6p-h8-cbw"/>
+                                        <constraint firstItem="EdF-nT-l8F" firstAttribute="top" secondItem="4gr-ZY-sqi" secondAttribute="bottom" constant="10" id="wZn-7L-eD9"/>
+                                        <constraint firstItem="bgH-B0-X68" firstAttribute="leading" secondItem="YgD-R6-5rZ" secondAttribute="trailing" constant="13" id="x6E-cE-OSJ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="averagePriceLabel" destination="fal-31-cI5" id="FRK-iT-Lsp"/>
+                                    <outlet property="discountLabel" destination="bgH-B0-X68" id="1bQ-0r-xdM"/>
+                                    <outlet property="distanceLabel" destination="vYS-wz-XHd" id="2hr-wA-OTQ"/>
+                                    <outlet property="iconView" destination="siO-1L-yg3" id="KYq-By-4AO"/>
+                                    <outlet property="jianLable" destination="YgD-R6-5rZ" id="Ql2-Xy-BNe"/>
+                                    <outlet property="levelLabel" destination="yLy-Z1-sdC" id="G57-dq-3cy"/>
+                                    <outlet property="levelStar" destination="EdF-nT-l8F" id="coq-Go-dZQ"/>
+                                    <outlet property="nameLabel" destination="4gr-ZY-sqi" id="C70-xV-6lp"/>
+                                    <outlet property="offNumLabel" destination="DAh-PD-LBi" id="nOD-Ah-KQJ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rL9-Ki-bmJ" id="dJB-YL-rHv"/>
+                            <outlet property="delegate" destination="rL9-Ki-bmJ" id="Nvt-Th-pLG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7aB-OF-SWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-465" y="203"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kfc" width="220" height="220"/>
+    </resources>
+</document>
